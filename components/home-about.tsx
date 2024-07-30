@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import HomeService1 from "../public/images/home-service-1.jpg";
 import HomeService2 from "../public/images/home-service-2.jpg";
 import HomeService3 from "../public/images/home-service-3.jpg";
@@ -17,8 +16,8 @@ export default function HomeAbout() {
           <p className="text-base text-muted-foreground">
             Nous dispensons des cours de boxe anglaise et thaïlandaise pour tous
             les niveaux, de 6 à 76 ans, dans un esprit de petit groupe pour un
-            coaching personnalisé. Nous prônons l'excellence dans l'enseignement
-            avec des cours adaptés à tous les niveaux.
+            coaching personnalisé. Nous prônons l&apos;excellence dans
+            l&apos;enseignement avec des cours adaptés à tous les niveaux.
           </p>
 
           <Button size={"lg"} variant={"secondary"} className="w-fit">

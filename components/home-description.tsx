@@ -29,12 +29,13 @@ export default function HomeDescription() {
               historique, fondé en 1947 et présidé par Hacene Cherifi, offre à
               tous, de 6 à 76 ans, une immersion dans le monde de la boxe
               anglaise et thaïlandaise. Situé au gymnase Genty, nous prônons
-              l'excellence dans l'enseignement avec des cours adaptés à tous les
-              niveaux, dans un esprit de petit groupe pour un coaching
-              personnalisé. Nos valeurs reposent sur la qualité, la cohésion, et
-              l'engagement communautaire, avec une forte volonté de
-              sensibilisation sur des sujets importants tels que la lutte contre
-              les violences faites aux femmes et la pédophilie dans le sport.
+              l&apos;excellence dans l&apos;enseignement avec des cours adaptés
+              à tous les niveaux, dans un esprit de petit groupe pour un
+              coaching personnalisé. Nos valeurs reposent sur la qualité, la
+              cohésion, et l&apos;engagement communautaire, avec une forte
+              volonté de sensibilisation sur des sujets importants tels que la
+              lutte contre les violences faites aux femmes et la pédophilie dans
+              le sport.
             </p>
           </div>
         </div>
