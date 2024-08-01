@@ -116,7 +116,7 @@ function ContactForm() {
             name="companyName"
             className="form-input w-full"
             type="text"
-            placeholder="Ex: Voolta"
+            placeholder="Ex: Boxing Club Croix Rousse"
           />
         </div>
         <div>

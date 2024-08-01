@@ -57,7 +57,7 @@ export const Values = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-24 lg:mt-32 mb-20">
       <h2 className="text-3xl font-semibold text-foreground text-center mb-8">
-        Vos Avantages avec Voolta
+        Vos Avantages avec Boxing Club Croix Rousse
       </h2>
 
       <p className="text-center text-muted-foreground mb-12">

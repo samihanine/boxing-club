@@ -72,7 +72,7 @@ export default function Footer() {
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li>
               <a
-                href="https://linkedin.com/company/vooltafr"
+                href="https://linkedin.com/company/boxingclubcroixrousse"
                 rel="noreferrer"
                 target="_blank"
                 className="flex justify-center items-center text-foreground rounded-full shadow transition duration-150 ease-in-out"
@@ -96,7 +96,7 @@ export default function Footer() {
 
           {/* Copyrights note */}
           <div className="text-sm text-muted-foreground mr-4">
-            &copy; voolta.fr. All rights reserved.
+            &copy; Boxing Club Croix Rousse.fr. All rights reserved.
           </div>
         </div>
       </div>

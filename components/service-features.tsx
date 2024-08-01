@@ -12,12 +12,12 @@ export default function ServiceFeatures() {
     <>
       <ServiceFeature
         title="Pour les entreprises"
-        description="Voolta se dédie aux acteurs économiques tels que hôtels, entreprises, espaces de coworking et restaurants, en quête de solutions de transport éthiques et durables. Nos services s'adaptent à vos exigences professionnelles tout en soutenant fermement vos objectifs RSE avec une mobilité à empreinte carbone réduite. Engagez-vous aux côtés d'un partenaire qui facilite la transition de votre activité vers des pratiques plus vertes et responsables."
+        description="Boxing Club Croix Rousse se dédie aux acteurs économiques tels que hôtels, entreprises, espaces de coworking et restaurants, en quête de solutions de transport éthiques et durables. Nos services s'adaptent à vos exigences professionnelles tout en soutenant fermement vos objectifs RSE avec une mobilité à empreinte carbone réduite. Engagez-vous aux côtés d'un partenaire qui facilite la transition de votre activité vers des pratiques plus vertes et responsables."
         features={[
           {
             title: "Politique RSE Engagée",
             description:
-              "Voolta enrichit votre démarche durable avec une flotte éco-efficiente, réaffirmant votre engagement envers une mobilité professionnelle responsable.",
+              "Boxing Club Croix Rousse enrichit votre démarche durable avec une flotte éco-efficiente, réaffirmant votre engagement envers une mobilité professionnelle responsable.",
             Icon: ClockIcon,
           },
           {
@@ -38,7 +38,7 @@ export default function ServiceFeatures() {
       <ServiceFeature
         reverse
         title="Pour les particuliers"
-        description="Voolta s'adresse aussi directement à vous, particuliers, qui cherchez un moyen de déplacement qui allie responsabilité écologique et service personnel de premier choix. Nous apportons une solution de mobilité qui non seulement respecte l'environnement, mais enrichit également vos expériences de voyage au quotidien."
+        description="Boxing Club Croix Rousse s'adresse aussi directement à vous, particuliers, qui cherchez un moyen de déplacement qui allie responsabilité écologique et service personnel de premier choix. Nous apportons une solution de mobilité qui non seulement respecte l'environnement, mais enrichit également vos expériences de voyage au quotidien."
         features={[
           {
             title: "Confort Sur-Mesure",

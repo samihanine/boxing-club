@@ -3,8 +3,9 @@ import Header from "@/components/header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Voolta",
-  description: "Voolta est une agence de chauffeurs privés à Lyon",
+  title: "Boxing Club Croix Rousse",
+  description:
+    "Boxing Club Croix Rousse est une agence de chauffeurs privés à Lyon",
 };
 
 export default async function Layout({

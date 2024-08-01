@@ -7,7 +7,7 @@ export default function Locations() {
       {/* Section header */}
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-28">
         <h2 className="text-3xl md:text-4xl font-medium font-cabinet-grotesk">
-          Mobilité et ponctualité assurée avec Voolta
+          Mobilité et ponctualité assurée avec Boxing Club Croix Rousse
         </h2>
       </div>
 
@@ -23,7 +23,7 @@ export default function Locations() {
           </p>
 
           <h3 className="text-2xl font-medium text-foreground mt-8">
-            L’importance du timing chez Voolta
+            L’importance du timing chez Boxing Club Croix Rousse
           </h3>
 
           <p className="text-muted-foreground">

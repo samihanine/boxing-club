@@ -1,6 +1,7 @@
-# Voolta
+# Boxing Club Croix Rousse
 
 ## Services
+
 - Vercel (Frontend and Backend)
 - Neon (Database)
 - Fastcron (Cron Jobs)

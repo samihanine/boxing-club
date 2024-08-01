@@ -21,7 +21,7 @@ export default function HomeDescription() {
 
           <div className="flex-1 flex flex-col items-center gap-10">
             <h2 className="text-3xl md:text-4xl font-bold">
-              Nous sommes le Boxing Club Croix Rousse
+              Qui sommes-nous ?{" "}
             </h2>
 
             <p className="text-base text-muted-foreground">

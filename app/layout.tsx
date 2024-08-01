@@ -6,8 +6,9 @@ import "./globals.css";
 const font = Libre_Franklin({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Voolta",
-  description: "Voolta est une agence de chauffeurs privés à Lyon",
+  title: "Boxing Club Croix Rousse",
+  description:
+    "Boxing Club Croix Rousse est une agence de chauffeurs privés à Lyon",
 };
 
 export default async function RootLayout({
