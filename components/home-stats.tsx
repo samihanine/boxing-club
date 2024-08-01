@@ -5,7 +5,10 @@ export default function HomeStats() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex gap-10 flex-col sm:flex-row items-center">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <dl className="grid grid-cols-1 gap-x-12 gap-y-16 text-center lg:grid-cols-3">
-              <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+              <div
+                data-aos="fade-right"
+                className="mx-auto flex max-w-xs flex-col gap-y-4"
+              >
                 <dt className="text-base leading-7 text-background">
                   Ouvert le mardi, mercredi, jeudi et samedi
                 </dt>
@@ -13,7 +16,10 @@ export default function HomeStats() {
                   4 jours
                 </dd>
               </div>
-              <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+              <div
+                data-aos="zoom-in"
+                className="mx-auto flex max-w-xs flex-col gap-y-4"
+              >
                 <dt className="text-base leading-7 text-background">
                   Inscrits depuis 2019
                 </dt>
@@ -22,7 +28,10 @@ export default function HomeStats() {
                 </dd>
               </div>
 
-              <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+              <div
+                data-aos="fade-left"
+                className="mx-auto flex max-w-xs flex-col gap-y-4"
+              >
                 <dt className="text-base leading-7 text-background">
                   {" "}
                   Fondé il y a plus de 70 ans

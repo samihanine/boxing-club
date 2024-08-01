@@ -34,7 +34,7 @@ export default function Footer() {
               </li>
               <li className="mb-2">
                 <a href="/services" className="text-muted-foreground">
-                  Services
+                  Inscription
                 </a>
               </li>
 

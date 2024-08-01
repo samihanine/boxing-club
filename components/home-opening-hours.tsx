@@ -96,7 +96,10 @@ const HomeOpeningHours: React.FC = () => {
   return (
     <section>
       <div className="py-12 md:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex gap-10 flex-col items-center">
+        <div
+          data-aos="zoom-in"
+          className="max-w-7xl mx-auto px-4 sm:px-6 flex gap-10 flex-col items-center"
+        >
           <h2 className="text-3xl md:text-4xl font-bold">
             Horaires des séances
           </h2>

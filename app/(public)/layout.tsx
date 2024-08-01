@@ -1,18 +1,21 @@
+"use client";
+
+import AOS from "aos";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Boxing Club Croix Rousse",
-  description:
-    "Boxing Club Croix Rousse est une agence de chauffeurs privés à Lyon",
-};
+import { useEffect } from "react";
 
 export default async function Layout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <>
       <Header />

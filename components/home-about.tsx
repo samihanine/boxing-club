@@ -9,7 +9,7 @@ export default function HomeAbout() {
   return (
     <section className="bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 flex gap-5 sm:gap-20 items-center flex-col sm:flex-row">
-        <div className="flex-1 flex flex-col gap-10">
+        <div data-aos="fade-right" className="flex-1 flex flex-col gap-10">
           <h2 className="text-3xl md:text-4xl font-bold">
             Boxe anglaise et thaïlandaise{" "}
           </h2>
@@ -21,10 +21,10 @@ export default function HomeAbout() {
           </p>
 
           <Button size={"lg"} variant={"secondary"} className="w-fit">
-            Voir nos abonnements
+            {"S'inscrire !"}
           </Button>
         </div>
-        <div className="flex-1">
+        <div data-aos="fade-left" className="flex-1">
           <div className="w-full max-w-lg mx-auto flex flex-col gap-5 ">
             <div className="grid grid-flow-row-dense grid-cols-4 gap-5">
               <Image

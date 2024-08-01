@@ -5,23 +5,57 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Select } from "./ui/select";
 import { Textarea } from "./ui/textarea";
-import { LampDemo } from "./lamp";
 import { toast } from "react-toastify";
+import ContactMap from "./contact-map";
+import { AtSignIcon, HomeIcon, PhoneIcon } from "lucide-react";
 
 export default function Contact() {
   return (
-    <main className="flex min-h-[calc(100vh-64px)] h-full md:h-[calc(100vh-64px)] flex-col md:flex-row">
-      <div className="w-full md:w-1/2 md:p-8">
-        <ContactForm />
-      </div>
+    <section>
+      <div className="py-12 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex gap-10 sm:gap-20 flex-col sm:flex-row">
+          <div className="flex-1">
+            <h1 className="text-3xl md:text-5xl font-bold text-foreground">
+              Contactez-nous
+            </h1>
 
-      <div
-        className="w-full md:w-1/2 bg-foreground h-full hnameden md:flex border-l border-l-input"
-        aria-hnameden="true"
-      >
-        <LampDemo />
+            <p className="mt-4 text-base text-muted-foreground">
+              Pour toutes questions ou pour planifier votre séance d'essai,
+              n'hésitez pas à nous contacter via le formulaire ci-dessous. Au
+              plaisir de vous rencontrer et de vous voir sur le ring !
+            </p>
+
+            <div className="flex flex-col mt-10 gap-10">
+              <div className="flex gap-5 items-center">
+                <HomeIcon className="w-6 h-6 text-secondary" />
+                <span className="font-medium">
+                  1 Rue Dominique Perfetti, 69001 Lyon
+                </span>
+              </div>
+              <div className="flex gap-5 items-center">
+                <PhoneIcon className="w-6 h-6 text-secondary" />
+                <a href="tel:+3360254850" className="font-medium">
+                  07 60 25 48 50
+                </a>
+              </div>
+              <div className="flex gap-5 items-center">
+                <AtSignIcon className="w-6 h-6 text-secondary" />
+                <a
+                  href="mailto:croixrousseboxingclub@gmail.com"
+                  className="font-medium"
+                >
+                  croixrousseboxingclub@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1">
+            <ContactForm />
+          </div>
+        </div>
+        <ContactMap />
       </div>
-    </main>
+    </section>
   );
 }
 
@@ -65,34 +99,18 @@ function ContactForm() {
   };
 
   return (
-    <div className="w-full max-w-sm mx-auto flex flex-col gap-10 h-full justify-center p-5">
-      <div className="text-3xl md:text-5xl font-cabinet-grotesk font-medium text-foreground">
-        Contactez-nous.
-      </div>
-
+    <div className="w-full flex flex-col gap-10 h-full justify-center">
       {/* Form */}
       <form onSubmit={handleSubmit} className="space-y-4" id="contact-form">
         <div>
           <label className="block text-sm font-medium mb-1" htmlFor="name">
-            Prénom <span className="text-pink-500">*</span>
+            Prénom Nom <span className="text-pink-500">*</span>
           </label>
           <Input
-            name="firstName"
+            name="name"
             className="form-input w-full"
             type="text"
-            placeholder="Ex: John"
-            required
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium mb-1" htmlFor="name">
-            Nom de famille <span className="text-pink-500">*</span>
-          </label>
-          <Input
-            name="lastName"
-            className="form-input w-full"
-            type="text"
-            placeholder="Ex: Doe"
+            placeholder="Ex: John Doe"
             required
           />
         </div>
@@ -109,14 +127,14 @@ function ContactForm() {
           />
         </div>
         <div>
-          <label className="block text-sm font-medium mb-1" htmlFor="company">
-            Nom de l&apos;entreprise
+          <label className="block text-sm font-medium mb-1" htmlFor="email">
+            Téléphone
           </label>
           <Input
-            name="companyName"
+            name="phone"
             className="form-input w-full"
-            type="text"
-            placeholder="Ex: Boxing Club Croix Rousse"
+            type="tel"
+            placeholder="Ex: 06 12 34 56 78"
           />
         </div>
         <div>
@@ -137,8 +155,10 @@ function ContactForm() {
         )}
 
         <Button
-          className="px-8 inline-flex items-center !w-full group mt-6"
+          className="px-8 inline-flex items-center !w-fit group mt-6"
           disabled={loading}
+          variant={"secondary"}
+          size={"lg"}
         >
           {loading ? "Chargement..." : "Envoyer"}
         </Button>

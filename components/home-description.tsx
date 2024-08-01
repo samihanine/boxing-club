@@ -7,7 +7,7 @@ export default function HomeDescription() {
     <section>
       <div className="py-12 md:py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex gap-10 flex-col sm:flex-row items-center">
-          <div className="flex-1">
+          <div data-aos="fade-right" className="flex-1">
             <Link href="/about">
               <Image
                 src="/images/home-description.jpg"
@@ -19,8 +19,11 @@ export default function HomeDescription() {
             </Link>
           </div>
 
-          <div className="flex-1 flex flex-col items-center gap-10">
-            <h2 className="text-3xl md:text-4xl font-bold">
+          <div
+            data-aos="fade-left"
+            className="flex-1 flex flex-col items-center gap-10"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold w-full">
               Qui sommes-nous ?{" "}
             </h2>
 

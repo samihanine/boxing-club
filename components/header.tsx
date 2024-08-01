@@ -18,7 +18,7 @@ export default function Header() {
       <nav
         id="navbar"
         className={cn(
-          "fixed z-[100] bg-background dark:bg-opacity-50 w-full h-fit shadow-md",
+          "fixed z-[100] bg-background dark:bg-opacity-50 w-screen h-fit shadow-md",
           "bg-opacity-90 backdrop-blur-md",
         )}
       >
@@ -34,7 +34,7 @@ export default function Header() {
               <>
                 <div className="flex items-center gap-8 font-medium">
                   <Link href="/">Accueil</Link>
-                  <Link href="/services">Services</Link>
+                  <Link href="/services">Inscription</Link>
                   <Link href="/about">À propos</Link>
 
                   <ContactButton />
@@ -54,7 +54,7 @@ export default function Header() {
 
                       <div className="flex flex-col gap-2 items-center w-full">
                         <Link href="/">Accueil</Link>
-                        <Link href="/services">Services</Link>
+                        <Link href="/services">Inscription</Link>
                         <Link href="/about">À propos</Link>
                       </div>
 
@@ -69,6 +69,7 @@ export default function Header() {
           </div>
         </div>
       </nav>
+      <div className="h-[80px]"></div>
     </header>
   );
 }
