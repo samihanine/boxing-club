@@ -98,7 +98,7 @@ export default function Footer() {
           <ul className="flex mb-4 gap-5">
             <li>
               <a
-                href="https://linkedin.com/company/boxingclubcroixrousse"
+                href="https://www.linkedin.com/company/boxing-club-croix-rousse/"
                 rel="noreferrer"
                 target="_blank"
                 className="flex justify-center items-center text-foreground rounded-full shadow transition duration-150 ease-in-out"

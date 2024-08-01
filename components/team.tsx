@@ -1,6 +1,7 @@
 import Image from "next/image";
 import AbdelChaaba from "../public/images/abdel-chaaba.jpg";
 import Placeholder from "../public/images/portrait-placeholder.jpg";
+
 export default function Team() {
   const members = [
     {
