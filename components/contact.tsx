@@ -1,20 +1,21 @@
 "use client";
 
-import React from "react";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Select } from "./ui/select";
-import { Textarea } from "./ui/textarea";
+import { AtSignIcon, HomeIcon, PhoneIcon } from "lucide-react";
+import React, { useRef } from "react";
 import { toast } from "react-toastify";
 import ContactMap from "./contact-map";
-import { AtSignIcon, HomeIcon, PhoneIcon } from "lucide-react";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
+import { sendContactEmail } from "@/server/email";
+import { Altcha } from "react-altcha";
 
 export default function Contact() {
   return (
     <section>
-      <div className="py-12 bg-background">
+      <div className="py-12 sm:py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex gap-10 sm:gap-20 flex-col sm:flex-row">
-          <div className="flex-1">
+          <div data-aos="fade-right" className="flex-1">
             <h1 className="text-3xl md:text-5xl font-bold text-foreground">
               Contactez-nous
             </h1>
@@ -49,7 +50,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="flex-1">
+          <div data-aos="fade-left" className="flex-1">
             <ContactForm />
           </div>
         </div>
@@ -62,6 +63,7 @@ export default function Contact() {
 function ContactForm() {
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
+  const altchaRef = useRef<HTMLInputElement>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -70,22 +72,22 @@ function ContactForm() {
     setLoading(true);
     const formData = new FormData(e.currentTarget);
 
-    const firstName = formData.get("firstName") as string;
-    const lastName = formData.get("lastName") as string;
+    console.log("Altcha payload:", altchaRef.current?.value);
+
+    const name = formData.get("name") as string;
     const email = formData.get("email") as string;
-    const companyName = formData.get("companyName") as string;
+    const phone = formData.get("phone") as string;
     const message = formData.get("message") as string;
 
-    console.log({
-      firstName,
-      lastName,
-      companyName,
+    const { error } = await sendContactEmail({
+      name,
       email,
+      phone,
       message,
     });
 
     if (error) {
-      setError(error);
+      setError(error?.message);
       setLoading(false);
       return;
     } else {
@@ -146,7 +148,14 @@ function ContactForm() {
             name="message"
             className="form-textarea w-full"
             required
-            placeholder="Tappez votre message ici"
+            placeholder="Tapez votre message ici"
+          />
+        </div>
+
+        <div className="mb-4">
+          <Altcha
+            challengeurl={`${process.env.NEXT_PUBLIC_BASE_URL}/api/captcha/challenge`}
+            verifyurl={`${process.env.NEXT_PUBLIC_BASE_URL}/api/captcha/verify`}
           />
         </div>
 
@@ -159,6 +168,7 @@ function ContactForm() {
           disabled={loading}
           variant={"secondary"}
           size={"lg"}
+          type="submit"
         >
           {loading ? "Chargement..." : "Envoyer"}
         </Button>

@@ -21,7 +21,10 @@ export default function RegistrationDescription() {
     <section>
       <div className="py-12 md:py-20 bg-[#E8E5D8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex gap-10 sm:gap-12 flex-col items-center">
-          <div className="flex-1 flex flex-col items-center gap-3">
+          <div
+            data-aos="fade-up"
+            className="flex-1 flex flex-col items-center gap-3"
+          >
             <h2 className="text-3xl md:text-4xl font-bold w-full text-center">
               Condition d&apos;inscription{" "}
             </h2>

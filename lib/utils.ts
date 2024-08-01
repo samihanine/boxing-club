@@ -1,5 +1,24 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+import crypto from "crypto";
+
+const ALTCHA_SECRET = process.env.ALTCHA_SECRET as string;
+
+export function generateSalt(length = 20) {
+  return crypto.randomBytes(length).toString("hex");
+}
+
+export function generateHmacKey() {
+  const hmac = crypto.createHmac("sha256", ALTCHA_SECRET);
+
+  return hmac.digest("hex");
+}
+
+export function generateSignature(message: string) {
+  const hmac = crypto.createHmac("sha256", ALTCHA_SECRET);
+  hmac.update(message);
+  return hmac.digest("hex");
+}
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));

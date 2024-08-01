@@ -19,7 +19,7 @@ export default function Hero() {
         data-aos="fade-right"
         className="z-10 w-full pt-20 px-4 sm:px-10 min-h-full h-fit flex justify-center flex-col gap-10 max-w-7xl"
       >
-        <h1 className="text-background text-4xl sm:text-7xl font-medium tracking-wider w-full max-w-lg">
+        <h1 className="text-background text-4xl sm:text-7xl font-bold tracking-wider w-full max-w-lg">
           Vos cours de boxe thaï et anglaise à Lyon
         </h1>
 
