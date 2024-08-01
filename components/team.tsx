@@ -1,11 +1,12 @@
 import Image from "next/image";
 import AbdelChaaba from "../public/images/abdel-chaaba.jpg";
+import Placeholder from "../public/images/portrait-placeholder.jpg";
 export default function Team() {
   const members = [
     {
       name: "Hacene",
       role: "Président du club",
-      image: AbdelChaaba,
+      image: Placeholder,
     },
     {
       name: "Abdel",
@@ -15,12 +16,12 @@ export default function Team() {
     {
       name: "Mohammed",
       role: "Coach d'anglaise",
-      image: AbdelChaaba,
+      image: Placeholder,
     },
     {
       name: "Sarah",
       role: "Secrétaire du club",
-      image: AbdelChaaba,
+      image: Placeholder,
     },
   ];
 
@@ -45,7 +46,11 @@ export default function Team() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
             {members.map((member, index) => (
               <div key={index} className="flex flex-col" data-aos="fade-up">
-                <Image src={member.image} alt={member.name} />
+                <Image
+                  className="object-cover h-full"
+                  src={member.image}
+                  alt={member.name}
+                />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
 
