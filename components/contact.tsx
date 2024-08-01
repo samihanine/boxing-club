@@ -20,9 +20,9 @@ export default function Contact() {
             </h1>
 
             <p className="mt-4 text-base text-muted-foreground">
-              Pour toutes questions ou pour planifier votre séance d'essai,
-              n'hésitez pas à nous contacter via le formulaire ci-dessous. Au
-              plaisir de vous rencontrer et de vous voir sur le ring !
+              Pour toutes questions ou pour planifier votre séance d&apos;essai,
+              n&apos;hésitez pas à nous contacter via le formulaire ci-dessous.
+              Au plaisir de vous rencontrer et de vous voir sur le ring !
             </p>
 
             <div className="flex flex-col mt-10 gap-10">
