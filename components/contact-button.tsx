@@ -13,7 +13,7 @@ const ContactButton = ({ ...props }: React.ComponentProps<typeof Button>) => {
         variant={"secondary"}
         type="button"
         className={cn("flex gap-5", props.className)}
-        size={"lg"}
+        size={props.size || "lg"}
       >
         Nous contacter
       </Button>

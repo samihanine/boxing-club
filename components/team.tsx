@@ -1,6 +1,8 @@
 import Image from "next/image";
-import AbdelChaaba from "../public/images/abdel-chaaba.jpg";
-import Placeholder from "../public/images/portrait-placeholder.jpg";
+import AbdelChaaba from "../public/images/abdel-chaaba.png";
+import SarahHanine from "../public/images/sarah-hanine.png";
+import Mohammed from "../public/images/mohammed.png";
+import Placeholder from "../public/images/team-placeholder.png";
 
 export default function Team() {
   const members = [
@@ -17,12 +19,12 @@ export default function Team() {
     {
       name: "Mohammed",
       role: "Coach d'anglaise",
-      image: Placeholder,
+      image: Mohammed,
     },
     {
       name: "Sarah",
       role: "Secrétaire du club",
-      image: Placeholder,
+      image: SarahHanine,
     },
   ];
 
@@ -53,9 +55,7 @@ export default function Team() {
                   alt={member.name}
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-
-                <div className="flex flex-col gap-2 items-center absolute text-white h-full justify-end w-full p-5">
+                <div className="flex flex-col gap-2 items-center h-full justify-end w-full mt-5">
                   <h3 className="text-2xl font-medium text-center">
                     {member.name}
                   </h3>

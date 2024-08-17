@@ -3,12 +3,7 @@ export default function RegistrationDescription() {
     {
       title: "Abonnements",
       description:
-        "Nous fonctionnons uniquement par abonnement, sans possibilité de cours à la carte. Les cours sont dispensés de <strong>septembre à juin</strong>.",
-    },
-    {
-      title: "Tarifs",
-      description:
-        "Disponibles pour les <strong>adultes</strong> et <strong>les moins de 16 ans</strong>. Venez tester un cours et rencontrer notre coach ! Cela vous permettra de discuter de vos attentes et de découvrir nos tarifs directement sur place.",
+        "Nous fonctionnons uniquement par abonnement, sans possibilité de cours à la carte. Les cours sont dispensés de septembre à juin. Pour connaître nos tarifs d'abonnement, veuillez <strong>parler directement avec notre coach</strong> qui vous fournira toutes les informations nécessaires.",
     },
     {
       title: "Équipement",
@@ -30,14 +25,22 @@ export default function RegistrationDescription() {
             </h2>
 
             <p className="text-base text-muted-foreground text-center w-full max-w-4xl">
-              Pour vous inscrire, il vous suffit de venir au club lors des
-              horaires de cours et de vous présenter à notre coach. Vous pourrez
-              ainsi discuter de vos attentes et de vos objectifs, et découvrir
-              nos tarifs et nos abonnements.
+              Avant de vous inscrire, testez un entraienement lors d’une séance
+              gratuite. Vous pourrez discuter de vos attentes et objectifs, et
+              découvrir nos tarifs et abonnements. Pour la réserver cliquer sur
+              ce{" "}
+              <a
+                href="https://forms.gle/iTc5UJbZT4QzHcBG9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-bold"
+              >
+                lien
+              </a>
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
             {elements.map((element, index) => (
               <div key={index} className="flex flex-col" data-aos="fade-up">
                 <div className="bg-secondary text-background p-5">

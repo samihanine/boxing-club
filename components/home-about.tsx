@@ -18,6 +18,15 @@ export default function HomeAbout() {
             les niveaux, de 6 à 76 ans, dans un esprit de petit groupe pour un
             coaching personnalisé. Nous prônons l&apos;excellence dans
             l&apos;enseignement avec des cours adaptés à tous les niveaux.
+            <br />
+            <br />
+            Nos cours commencent par un échauffement et une séance de cardio
+            guidée par le coach. Ensuite, nous travaillons sur la technique,
+            suivie d'un peu de sparring. Les séances se terminent par des
+            exercices d'abdominaux et des étirements, toujours sous la
+            supervision du coach. Les séances du samedi sont spécialement axées
+            sur les combats, offrant une immersion complète dans
+            l&apos;expérience du ring.
           </p>
 
           <Button size={"lg"} variant={"secondary"} className="w-fit">

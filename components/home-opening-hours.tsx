@@ -3,7 +3,7 @@ import React from "react";
 
 type ScheduleEntry = {
   ageRange: "ADULT" | "ADO" | "CHILDREN";
-  boxeType: "ENGLISH" | "THAI";
+  boxeType: "ENGLISH" | "THAI" | "FREE";
   day: string;
   startHour: number;
   endHour: number;
@@ -80,6 +80,20 @@ const schedules: ScheduleEntry[] = [
     startHour: 14,
     endHour: 16,
   },
+  {
+    ageRange: "ADULT",
+    boxeType: "FREE",
+    day: "Saturday",
+    startHour: 14,
+    endHour: 16,
+  },
+  {
+    ageRange: "ADULT",
+    boxeType: "FREE",
+    day: "Wednesday",
+    startHour: 14,
+    endHour: 16,
+  },
 ];
 
 const daysOfWeek = [
@@ -122,14 +136,17 @@ const HomeOpeningHours: React.FC = () => {
                 </h2>
                 {schedules
                   .filter((schedule) => schedule.day === day)
+                  .sort((a, b) => a.startHour - b.startHour)
                   .map((schedule, index) => (
                     <div
                       key={index}
                       className={cn(
                         "mt-2 p-3 rounded-md shadow-sm",
-                        schedule.boxeType === "ENGLISH"
-                          ? "bg-secondary text-background"
-                          : "bg-primary text-background",
+                        schedule.boxeType === "ENGLISH" &&
+                          "bg-secondary text-background",
+                        schedule.boxeType === "THAI" &&
+                          "bg-primary text-background",
+                        schedule.boxeType === "FREE" && "bg-[#FBDC6A]",
                       )}
                     >
                       <p className="text-sm">
@@ -138,6 +155,9 @@ const HomeOpeningHours: React.FC = () => {
                         )}
                         {schedule.boxeType === "THAI" && (
                           <span>Boxe thaïlandaise</span>
+                        )}
+                        {schedule.boxeType === "FREE" && (
+                          <span>Boxe anglaise et thaïlandaise (libre)</span>
                         )}
                       </p>
 
@@ -169,6 +189,13 @@ const HomeOpeningHours: React.FC = () => {
             <div className="flex items-center gap-3">
               <div className="aspect-square bg-secondary w-10 h-10"></div>
               <p className="text-muted-foreground">Boxe anglaise</p>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div className="aspect-square bg-[#FBDC6A] w-10 h-10"></div>
+              <p className="text-muted-foreground">
+                Boxe anglaise et thaïlandaise (libre)
+              </p>
             </div>
 
             <p className="font-medium">

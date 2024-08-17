@@ -10,10 +10,10 @@ export default function HomeStats() {
                 className="mx-auto flex max-w-xs flex-col gap-y-4"
               >
                 <dt className="text-base leading-7 text-background">
-                  Ouvert le mardi, mercredi, jeudi et samedi
+                  Quantité de femme adhérentes
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-background sm:text-5xl">
-                  4 jours
+                  50%
                 </dd>
               </div>
               <div
@@ -21,10 +21,10 @@ export default function HomeStats() {
                 className="mx-auto flex max-w-xs flex-col gap-y-4"
               >
                 <dt className="text-base leading-7 text-background">
-                  Inscrits depuis 2019
+                  Nombre d'adhérents actifs, chaque année
                 </dt>
                 <dd className="order-first text-3xl font-semibold tracking-tight text-background sm:text-5xl">
-                  200 disciples
+                  100+
                 </dd>
               </div>
 

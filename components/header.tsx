@@ -23,7 +23,7 @@ export default function Header() {
         )}
       >
         <div className="mx-auto px-5 sm:px-10 max-w-7xl">
-          <div className="relative flex flex-row gap-5 items-center justify-between h-20">
+          <div className="relative flex flex-row gap-5 items-center justify-between h-[70px]">
             <div className="relative z-20 flex justify-between w-max">
               <Link href="/">
                 <LogoText />
@@ -59,7 +59,7 @@ export default function Header() {
                       </div>
 
                       <div className="flex items-center justify-center flex-wrap gap-2">
-                        <ContactButton />
+                        <ContactButton size={"default"} />
                       </div>
                     </div>
                   </SheetContent>
@@ -69,7 +69,7 @@ export default function Header() {
           </div>
         </div>
       </nav>
-      <div className="h-[80px]"></div>
+      <div className="h-[70px]"></div>
     </header>
   );
 }

@@ -29,9 +29,15 @@ export default function ServiceTrial() {
               veuillez remplir le formulaire ci-dessous.
             </p>
 
-            <Button size={"lg"} variant={"secondary"} className="w-fit">
-              Remplir le formulaire d&apos;inscription
-            </Button>
+            <a
+              href="https://forms.gle/iTc5UJbZT4QzHcBG9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size={"lg"} variant={"secondary"} className="w-fit">
+                Remplir le formulaire d&apos;inscription
+              </Button>
+            </a>
           </div>
         </div>
       </div>
