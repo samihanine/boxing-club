@@ -22,8 +22,8 @@ export default function HomeAbout() {
             <br />
             Nos cours commencent par un échauffement et une séance de cardio
             guidée par le coach. Ensuite, nous travaillons sur la technique,
-            suivie d'un peu de sparring. Les séances se terminent par des
-            exercices d'abdominaux et des étirements, toujours sous la
+            suivie d&apos;un peu de sparring. Les séances se terminent par des
+            exercices d&apos;abdominaux et des étirements, toujours sous la
             supervision du coach. Les séances du samedi sont spécialement axées
             sur les combats, offrant une immersion complète dans
             l&apos;expérience du ring.

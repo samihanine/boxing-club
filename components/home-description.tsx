@@ -35,7 +35,7 @@ export default function HomeDescription() {
               <br />
               Situé au gymnase Genty, nous proposons des cours adaptés à tous
               les niveaux, avec un coaching personnalisé en petits groupes. Nos
-              valeurs sont la qualité, la cohésion, et l'engagement
+              valeurs sont la qualité, la cohésion, et l&apos;engagement
               communautaire, notamment contre les violences faites aux femmes et
               la pédophilie dans le sport.
             </p>
