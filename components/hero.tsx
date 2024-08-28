@@ -20,7 +20,8 @@ export default function Hero() {
         className="z-10 w-full pt-20 px-4 sm:px-10 min-h-full h-fit flex justify-center flex-col gap-10 max-w-7xl"
       >
         <h1 className="text-background text-4xl sm:text-7xl font-bold tracking-wider w-full max-w-lg">
-          Vos cours de boxe anglaise et thaïlandaise à Lyon
+          Vos cours <br></br>de boxe <br></br>anglaise et thaïlandaise <br></br>
+          à Lyon
         </h1>
 
         <ContactButton className="w-fit" />
