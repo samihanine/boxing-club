@@ -119,7 +119,7 @@ const HomeOpeningHours: React.FC = () => {
           </h2>
           <p className="text-base text-muted-foreground text-center max-w-3xl w-full">
             Nous vous accueillons du mardi au samedi pour des séances de boxe
-            anglaise et thaïlandaise. Nous proposons des séances pour les
+            anglaise et thaïlandaise. <br /> Nous proposons des séances pour les
             adultes et les adolescents, ainsi que pour les enfants.
           </p>
           <div className="flex flex-col sm:grid sm:grid-cols-7 gap-4 mt-5 w-full">
@@ -182,23 +182,6 @@ const HomeOpeningHours: React.FC = () => {
           </div>
 
           <div className="w-full flex gap-10 items-center justify-center flex-wrap">
-            <div className="flex items-center gap-3">
-              <div className="aspect-square bg-primary w-10 h-10"></div>
-              <p className="text-muted-foreground">Boxe thaïlandaise</p>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <div className="aspect-square bg-secondary w-10 h-10"></div>
-              <p className="text-muted-foreground">Boxe anglaise</p>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <div className="aspect-square bg-[#FBDC6A] w-10 h-10"></div>
-              <p className="text-muted-foreground">
-                Boxe anglaise et thaïlandaise (libre)
-              </p>
-            </div>
-
             <p className="font-medium">
               Enfant :{" "}
               <span className="text-muted-foreground font-normal">
