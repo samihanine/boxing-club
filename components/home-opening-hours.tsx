@@ -143,25 +143,14 @@ const HomeOpeningHours: React.FC = () => {
                       className={cn(
                         "mt-2 p-3 rounded-md shadow-sm",
                         schedule.boxeType === "ENGLISH" &&
-                          "bg-secondary text-background",
+                          "bg-[#FBDC6A] text-primary",
                         schedule.boxeType === "THAI" &&
+                          "bg-secondary text-background",
+                        schedule.boxeType === "FREE" &&
                           "bg-primary text-background",
-                        schedule.boxeType === "FREE" && "bg-[#FBDC6A]",
                       )}
                     >
                       <p className="text-sm">
-                        {schedule.boxeType === "ENGLISH" && (
-                          <span>Boxe anglaise</span>
-                        )}
-                        {schedule.boxeType === "THAI" && (
-                          <span>Boxe thaïlandaise</span>
-                        )}
-                        {schedule.boxeType === "FREE" && (
-                          <span>Boxe anglaise et thaïlandaise (libre)</span>
-                        )}
-                      </p>
-
-                      <p className="font-medium text-lg mb-2">
                         {schedule.ageRange === "ADULT" && <span>Adultes</span>}
 
                         {schedule.ageRange === "ADO" && (
@@ -170,6 +159,18 @@ const HomeOpeningHours: React.FC = () => {
 
                         {schedule.ageRange === "CHILDREN" && (
                           <span>Enfants</span>
+                        )}
+                      </p>
+
+                      <p className="font-medium text-lg mb-2">
+                        {schedule.boxeType === "ENGLISH" && (
+                          <span>Anglaise</span>
+                        )}
+                        {schedule.boxeType === "THAI" && (
+                          <span>Thaïlandaise</span>
+                        )}
+                        {schedule.boxeType === "FREE" && (
+                          <span>Anglaise et Thaï (libre)</span>
                         )}
                       </p>
 

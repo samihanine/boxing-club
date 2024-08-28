@@ -82,9 +82,12 @@ export default function Footer() {
 
             <p className="text-sm">
               Adresse:{" "}
-              <span className="text-foreground font-medium">
+              <a
+                className="text-secondary font-medium hover:underline"
+                href="https://www.google.com/maps/place/1+Rue+Dominique+Perfetti,+69001+Lyon,+France/@45.7721405,4.8132011,15.96z/data=!4m6!3m5!1s0x47f4eb0f83449a97:0x7e54fdc915303bcf!8m2!3d45.77191!4d4.8195409!16s%2Fg%2F11c5q9t9sk?entry=ttu&g_ep=EgoyMDI0MDgyNi4wIKXMDSoASAFQAw%3D%3D"
+              >
                 1 Rue Dominique Perfetti, 69001 Lyon
-              </span>
+              </a>
             </p>
           </div>
         </div>
